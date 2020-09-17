@@ -2,37 +2,47 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fretboard {
+    padding:5px;
+    background-color: #d4caa7;
+    
+}
+.fretboard .guitarString td {
+    border-top:2px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.guitarString button {
+    width: 50px;
+    border: 0;
+    background-color: transparent;
+    color: #9a906c;
+}
+.guitarString td:first-child {
+    border-right: 2px solid #000000;
+    background-color: #864f2b;
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.guitarString td:nth-child(2n) {
+    background-color: #9a906c;
+    color: #d4caa7;
+}
+.guitarString td:nth-child(2n) button {
+    color: #d4caa7;
+}
+.guitarString td:nth-child(13) {
+    background-color:#864f2b;
+    color:white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.fretNumbers td {
+    
+    font-size:12px;
+}
+.fretboard tr:last-child td {
+    border-top: 2px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+.MIDISounds svg {display:none;}
